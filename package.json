@@ -33,7 +33,9 @@
     "pretest": "node_modules/.bin/jshint bin lib scripts test",
     "test": "node_modules/.bin/mocha test",
     "build": "node scripts/build.js --force",
-    "prepublish": "not-in-install && node scripts/prepublish.js || in-install"
+    "prepublish": "not-in-install && node scripts/prepublish.js || in-install",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "files": [
     "bin",
@@ -64,7 +66,8 @@
     "nan": "^2.3.2",
     "node-gyp": "^3.3.1",
     "request": "^2.61.0",
-    "sass-graph": "^2.1.1"
+    "sass-graph": "^2.1.1",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.8",
@@ -73,5 +76,6 @@
     "mocha": "^2.4.5",
     "mocha-lcov-reporter": "^1.2.0",
     "rimraf": "^2.5.2"
-  }
+  },
+  "snyk": true
 }
