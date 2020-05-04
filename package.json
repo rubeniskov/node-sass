@@ -64,7 +64,7 @@
     "nan": "^2.3.2",
     "node-gyp": "^3.3.1",
     "request": "^2.61.0",
-    "sass-graph": "^2.1.1"
+    "sass-graph": "^3.0.5"
   },
   "devDependencies": {
     "coveralls": "^2.11.8",
